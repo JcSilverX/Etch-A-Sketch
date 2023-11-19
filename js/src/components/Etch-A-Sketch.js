@@ -90,6 +90,8 @@ export default class EtchASketch {
         this._find('.g-container__item', this._gcontainer)
             .forEach((item) => {
                 item.addEventListener('mousemove', (event) => event.target.classList.add('hover') );
+                item.addEventListener('touchmove', (event) => event.target.classList.add('hover') );
+                item.addEventListener('pointermove', (event) => event.target.classList.add('hover') );
             });
     }
 
