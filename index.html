@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-jsx-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Etch A Sketch</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/app.js" type="module"></script>
+    </head>
+    
+    <body class="page">
+        <div class="page__app">
+            <header class="header shadow-none">
+                <h1 class="logo logo--center ff-vt323 fs-44 fw-900">Etch-A-Sketch</h1>
+            </header>
+
+            <main class="main-content content-grid">
+                <div class="etch-a-sketch">
+                    <aside class="sidebar border">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <input type="color" name="pen-colour" id="pen-colour" value="#000000" class="" disabled />
+                            <span class="user-select-none fw-900">Pen Colour</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-5">
+                            <input type="color" name="bg-colour" id="bg-colour" value="#ffffff" class="" disabled />
+                            <span class="user-select-none fw-900">Background Colour</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="button" class="btn w-100 fs-14" style="--jsx-btn-border-color: #000000;" disabled>
+                                Rainbow Mode
+                            </button>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="button" class="btn w-100 fs-14" style="--jsx-btn-border-color: #000000;" disabled>
+                                Eraser
+                            </button>
+                        </div>
+
+                        <div class="mb-3">
+                            <select name="" id="" class="grid-size form__select fs-14">
+                                <option value="2">2 x 2</option>
+                                <option value="4">4 x 4</option>
+                                <option value="8">8 x 8</option>
+                                <option value="16" selected>16 x 16</option>
+                                <option value="32">32 x 32</option>
+                                <option value="64" disabled>64 x 64</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="button" class="btn btn--clear w-100 fs-14 border" style="">
+                                Clear
+                            </button>
+                        </div>
+                    </aside>
+                    <div class="g-container border">
+                        
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer shadow-none ff-vt323 fs-16">
+                <div class="copyright">
+                    &copy;
+                    2023 Copyright
+                    <a href="#!">JcSilverX</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
